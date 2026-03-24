@@ -6,10 +6,12 @@ import { fileURLToPath } from "url";
 dotenv.config();
 
 const app = express();
-const __dirname = path.dirname("MiniDataSharingTool/src");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 app.use(
-  express.static(path.join("D:/DEV ESSAIS PROJETS/MiniDataSharingTool/public")),
+  express.static(path.join(__dirname,"public")),
 );
+console.log(__dirname);
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
