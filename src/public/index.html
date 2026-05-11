@@ -13,16 +13,19 @@
       <input type="text" id="msgInput" required placeholder="..." />
       <button id="sendMsgBtn">Send</button>
     </div>
-    <div class="fileInputContainer">
-      <div>
-        <label for="fileInput0" class="custom-file-label">📤Fichier</label>
+      <div class="fileInputContainer">
+        <div>
+          <label for="fileInput0" class="custom-file-label">📤Fichier</label>
         <input type="file" name="file0" id="fileInput0" />
       </div>
       <div>
         <label for="fileInput" class="custom-file-label">🏞️Image</label>
         <input type="file" name="file" id="fileInput" accept="image/*" />
       </div>
-    </div>
+      </div>
+    <div>
+    <progress aria-valuemin="0" value="0" id="progress-bar" aria-valuemax="1" aria-valuenow="0.5"></progress>
+  </div>
     <script src="js/index.js"></script>
   </body>
 </html>

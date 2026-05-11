@@ -26,7 +26,7 @@ const Config = {
     port: PORT,
   },
   prod : {
-    host: process.env.HOST ?? "192.168.137.1",
+    host: process.env.HOST ?? "192.168.0.228",
     port: 4001,
   }
 }

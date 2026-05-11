@@ -2,7 +2,7 @@ import { Server } from "socket.io";
 
 export function setupIO(server) {
   const io = new Server(server, {
-    maxHttpBufferSize: 50 * 1024 * 1024,
+    maxHttpBufferSize: 500 * 1024 * 1024,
     transports: ['websocket', 'polling'],
     pingInterval: 60000,
     pingTimeout: 30000
